@@ -1,5 +1,11 @@
+import { ServiceTitle } from "../../common/ServiceTitle.jsx";
+import { BookContainer } from "./BookContainer.jsx";
+
 export const ListBooks = () => {
   return(
-    <div>Banana</div>
+    <div className="f-message">
+      <ServiceTitle text="List Books" />
+      <BookContainer />
+    </div>
   )
 };
