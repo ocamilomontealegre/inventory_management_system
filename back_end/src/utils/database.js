@@ -9,6 +9,6 @@ export const booksStorage = [
     year: 2005,
     price: 25,
     stock: 10,
-    picture: 'https://postimg.cc/nX8pPqMy'
+    picture: 'https://i.postimg.cc/Zn0WgHL4/001-percy-jackson-the-lightning-thief.jpg'
   }
 ];
