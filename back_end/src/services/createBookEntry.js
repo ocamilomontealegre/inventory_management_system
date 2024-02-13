@@ -12,7 +12,7 @@ export const createBookEntry = (bookData) => {
 
     // Add new book entry
     const newBook = { id: randomUUID(), ...bookData };
-    if(!newBook.picture) newBook.picture = 'https://postimg.cc/1nqNfM0R';
+    if(!newBook.picture) newBook.picture = 'https://i.postimg.cc/C12VywF2/000-no-cover.jpgn';
     booksStorage.push(newBook);
     
     return newBook;  
