@@ -41,8 +41,8 @@ export const BookForm = () => {
     <div className="form">
       <form className="f-body">
         <div className="f-group">
-          <input type="text" name="title" id="title" autoComplete="title"  value={bookData.title} onChange={(event) => handleInputChange(event, 'title')} placeholder="Title" />
-          <input type="text" name="author" id="author" autoComplete="author" value={bookData.author} onChange={(event) => handleInputChange(event, 'author')} placeholder="Author" />
+          <input type="text" name="title" id="title" value={bookData.title} onChange={(event) => handleInputChange(event, 'title')} placeholder="Title" />
+          <input type="text" name="author" id="author" value={bookData.author} onChange={(event) => handleInputChange(event, 'author')} placeholder="Author" />
         </div>
         <div className="f-group">
           <input type="number" name="year" id="year" value={bookData.year} onChange={(event) => handleInputChange(event, 'year')} placeholder="Year" />
@@ -52,7 +52,7 @@ export const BookForm = () => {
         <div className="f-group">
           <input type="text" name="picture" id="picture" value={bookData.picture} onChange={(event) => handleInputChange(event, 'picture')} placeholder="Picture" />
         </div>
-        <Button text="Send" onClick={addBook}/>
+        <Button text="Add Book" onClick={addBook}/>
       </form>
     </div>
   );
