@@ -18,7 +18,7 @@ export const updateBook = (req, res) => {
     const result = updateBookEntry(id, updatedBookData);
     logInfo( `Method: ${req.method} |`, `Path: ${req.path} |`, JSON.stringify(result) );
 
-    response( res, { type: 'success', name: 'addBook', statusCode: 201 }, result );
+    response( res, { type: 'success', name: 'addBook', statusCode: 200 }, result );
   } catch (err) {
     response( res, { type: 'error', name: 'updateBook', statusCode: 500 }, { message: err.message } );
   }
