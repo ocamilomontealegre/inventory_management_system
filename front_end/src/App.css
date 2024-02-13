@@ -80,7 +80,7 @@
 }
 
 /****** form styles *******/
-.form {
+.form, .b-container {
   display: flex;
   justify-content: center;
   width: 90%;
@@ -124,3 +124,33 @@ input {
   color: #FFFFFF;
   background-color: #765CDE;
 }
+
+/****** bookcontainer styles *******/
+.b-container {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 30vh;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.books {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 1rem;
+}
+
+.b-info {
+  width: 33.3%;
+  padding: 0.5rem;
+  font-size: 0.4rem;
+  text-align: center;
+  color: white;
+}
+
+.b-info img {
+  width: 60px;
+  height: 100px;
+}
+
