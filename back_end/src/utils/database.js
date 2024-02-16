@@ -1,9 +1,10 @@
-import { randomUUID } from 'node:crypto';
+import { randomUUID } from 'node:crypto'; // Import function to generate random UUIDs
 
+// Example book storage array
 export const booksStorage = [
-  // Book example
+  // Example book object
   {
-    id: randomUUID(),
+    id: randomUUID(), // Generate a random UUID for the book
     title: 'Percy Jackson & the Olympians: The Lightning Thief',
     author: 'Rick Riordan',
     year: 2005,
